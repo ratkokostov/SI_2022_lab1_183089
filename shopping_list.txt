@@ -1,6 +1,6 @@
-1. Banana
-2. Jabolko
-3. Leb
-4. Mleko
-5. Jajca
+1. Banana x2
+2. Jabolko x3
+3. Leb x1 
+4. Mleko x4
+5. Jajca x5
 
