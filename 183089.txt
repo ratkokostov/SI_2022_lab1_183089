@@ -1,0 +1,167 @@
+1.Команда "git clone https://github.com/ratkokostov/SI_2022_lab1_183089"
+- Ми овозможи да го клонирам моето remote repo кое го креирав на Github 
+кое содржи една текстуална датотека README.md.
+2. Локално дадов нова текстуална датотека со име shopping_list.txt
+   во која има 5 различни производи. Команда "git status" - која 
+   овозможува да проверам во која состојба се датотеките.
+   Како одговор добив две датотеки кои се untracked.
+3. Според 5-тото барање ја извршив командата "git add shopping_list.txt"	
+   која ми овозможи текстуалната датотека да ја поставам на сцена.
+   Сега датотеката во која што пишувам е untracked а shopping_list.txt
+   е на сцена.
+
+4. Според истото барање ја извршив командата  "git commit -m " Add 5 items to the shopping list" "
+  која ми овозможи датотеката која е на сцена да и извршам commit со порака "Add 5 items to the shopping list".
+
+5. Извршив "Git Status" како резултат ја добив само моменталната датотека која е во untracked состојба 
+   и дека имам извршено 1 commit.
+
+6. Според барањето 6 додадов дополително количина на секои од производите, откако извршив "git status" добив
+  порака дека датотеката на која и извршив commit сега е во состојба modified.
+
+7. Повторно извршив "git add shopping_list.txt" со тоа што повторно датотеката ми е спремна за commit.
+   Извршив команда  " git commit -m "Add quantities to the items" која ми овозможи повторно да извршам commit
+   со порака "Add quantities to the items.".
+
+8. Според барањето 7 во кое треба да додадам две нови гранки branch1 и branch2 ја искористив командата
+   "git branch branch1" исто така и за branch2 која ми овозможи да креирам 2 гранки.
+
+9. Со командата "git branch" се осигурив дека успешно сум ги креирал двете гранки.
+
+10. Со командата "git log" ги добив досегашните логови, кои изгледаат вака:
+
+	commit 2c80c88301f1b6212dcfeaef637f5443a1a0fc3a (HEAD -> master, branch2, branch1)
+	Author: ratkokostov <ratkokostov21@gmail.com>
+	Date:   Wed Mar 9 16:35:04 2022 +0100
+
+	    Add quantities to the items.
+
+	commit 90e2261e78d4c237168a922e39dff4518dc1f301
+	Author: ratkokostov <ratkokostov21@gmail.com>
+	Date:   Wed Mar 9 16:24:19 2022 +0100
+
+	    Add 5 items to the shopping list
+
+	commit aacbba808c9e0a90f0c25c7a590eee21710eb310 (origin/master, origin/HEAD)
+	Author: ratkokostov <86716668+ratkokostov@users.noreply.github.com>
+	Date:   Wed Mar 9 15:51:12 2022 +0100
+
+   	 Update README.md
+
+	commit 7e495f319068e538c8006235adbe1f7348916fbb
+	Author: ratkokostov <86716668+ratkokostov@users.noreply.github.com>
+	Date:   Wed Mar 9 15:50:22 2022 +0100
+
+	    Initial commit
+
+11. Според барањето 9 ги синхронизирав трите гранки со помош на командата "git push origin."
+12. Според барањето 10 со командата "git checkout branch1" се префрлив на гранката branch1
+13. Според барањето 11 ја сменив содржината на ставвката 5, искористив "git add shopping_list.txt"
+    за да ја поставам на сцена после измената и со командатата "git commint -m "Change quantity of item #5"
+    извршив commit.
+
+14. Според барањето 12 се вратив на гранката master со помош на командата " git checkout master".
+15. Според барањето 13 ја изменив количината на втората ставка ја додадов датотеката на сцена 
+    со помош на "git add shopping_list.txt" потоа извршив commit со командата "git commit -m " Change quantity of item #2."
+
+16. Според барањето 14 ги синхронизирав сите гранки со помош на командата "git push origin".
+17. Според барањето 15 и 16 се префрлив на гранката branch2 го изменив името на ставката број 4 и на истиот начин
+    како во претходните чекори извршив commit со порака "Modify item #4".
+
+18. Според барањето 17 ја извршив командата git log --all која ми ги излиста сите логови и тие се следните:
+
+	    Author: ratkokostov <ratkokostov21@gmail.com>
+	Date:   Wed Mar 9 17:33:01 2022 +0100
+
+	    Change quantity of item #2
+
+	commit c1ede0530cef0550c15d83a2738848dd0e7fa8a7 (origin/branch1, branch1)
+	Author: ratkokostov <ratkokostov21@gmail.com>
+	Date:   Wed Mar 9 17:27:07 2022 +0100
+
+    	Change quantity of item #5
+
+	commit 2c80c88301f1b6212dcfeaef637f5443a1a0fc3a (origin/branch2)
+	Author: ratkokostov <ratkokostov21@gmail.com>
+	Date:   Wed Mar 9 16:35:04 2022 +0100
+
+	    Add quantities to the items.
+
+	commit 90e2261e78d4c237168a922e39dff4518dc1f301
+	Author: ratkokostov <ratkokostov21@gmail.com>
+	Date:   Wed Mar 9 16:24:19 2022 +0100
+
+	    Add 5 items to the shopping list
+
+	commit aacbba808c9e0a90f0c25c7a590eee21710eb310
+	Author: ratkokostov <86716668+ratkokostov@users.noreply.github.com>
+	Date:   Wed Mar 9 15:51:12 2022 +0100
+
+	    Update README.md
+
+	commit 7e495f319068e538c8006235adbe1f7348916fbb
+	Author: ratkokostov <86716668+ratkokostov@users.noreply.github.com>
+	Date:   Wed Mar 9 15:50:22 2022 +0100
+
+	    Initial commit
+ 
+19. Според барањето 18 извршив soft reset со помош на командата "git reset --soft HEAD^" која ми овозможи
+    да го ресетирам само последниот commit и потоа додадов нова ставка со број 6 и ги извршив командите
+    git add shopping_list.txt со тоа што ја поставив датотеката повторно на сцена и извршив commit со
+    командата "git commit -m "Modify item #4 and add item #6". 
+
+
+20. Според барањето 19 во прилог логовите:
+    	commit 8b59191cd38ada17081915e32a2132bec7857b69 (HEAD -> branch2)
+	Author: ratkokostov <ratkokostov21@gmail.com>
+	Date:   Wed Mar 9 17:56:42 2022 +0100
+
+    	Modify item #4 and add item #6
+
+	commit 7833a6cc67274e6ef771f26937d382626917b923 (origin/master, origin/HEAD, master)
+	Author: ratkokostov <ratkokostov21@gmail.com>
+	Date:   Wed Mar 9 17:33:01 2022 +0100
+
+	    Change quantity of item #2
+
+	commit c1ede0530cef0550c15d83a2738848dd0e7fa8a7 (origin/branch1, branch1)
+	Author: ratkokostov <ratkokostov21@gmail.com>
+	Date:   Wed Mar 9 17:27:07 2022 +0100
+
+	    Change quantity of item #5
+
+	commit 2c80c88301f1b6212dcfeaef637f5443a1a0fc3a (origin/branch2)
+	Author: ratkokostov <ratkokostov21@gmail.com>
+	Date:   Wed Mar 9 16:35:04 2022 +0100
+
+	    Add quantities to the items.
+
+	commit 90e2261e78d4c237168a922e39dff4518dc1f301
+	Author: ratkokostov <ratkokostov21@gmail.com>
+	Date:   Wed Mar 9 16:24:19 2022 +0100
+
+	    Add 5 items to the shopping list
+
+	commit aacbba808c9e0a90f0c25c7a590eee21710eb310
+	Author: ratkokostov <86716668+ratkokostov@users.noreply.github.com>
+	Date:   Wed Mar 9 15:51:12 2022 +0100
+	
+	    Update README.md
+
+	commit 7e495f319068e538c8006235adbe1f7348916fbb
+	Author: ratkokostov <86716668+ratkokostov@users.noreply.github.com>
+	Date:   Wed Mar 9 15:50:22 2022 +0100
+
+    	Initial commit
+ 
+21. Според барањето 20 се префрлив на master и ја споив гранката branch1 со помош на командата "git merge branch1"
+    Спојувањето се изврши според стратегијата на рекрузивно спојување, бидејќи измени беа направени на иста датотека
+    и во гранката master и во гранката branch1. Со таа цел се креира нов commit со измените и од двете гранки.
+22. Според барањето 21 ја искористив истата команда за спојување "git merge branch2" но добив одговор дека постои конфликт.
+    Во датотеката беа зачувани промените од master така што и промените од гранката branch2. За решавање на конфликт постојат
+    2 начина од кои да се прифати решението од едната гранка или од другата гранка. Во овој случај јас го прифатив решението од master гранката.
+    Со тоа што ги избришав промените од branch2 и ги оставив промените од master. Ја зачував датотеката потоа со командата "git add shopping_list.txt"
+    ја ставив на сцена и со командата "git commit"  се изврши комит воедно и merge. Инаку спојувањето  се реши со рекурзивна стратегија.
+
+   
+
